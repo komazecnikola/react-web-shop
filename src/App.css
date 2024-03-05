@@ -22,6 +22,10 @@
   --zinc-800: #27272a;
   --zinc-900: #18181b;
   --zinc-950: #09090b;
+
+  --blue: hsl(221.2, 83.2%, 53.3%);
+  --green: hsl(142.1, 76.2%, 36.3%);
+  --red: hsl(346.8, 77.2%, 49.8%);
 }
 
 body {
@@ -59,13 +63,17 @@ h6 {
   color: var(--zinc-900);
 }
 
+a {
+  text-decoration: none;
+}
+
 /* GLOBAL STYLES */
 
 .container {
   max-width: 70rem;
   margin-inline: auto;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 h1 {
