@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 
+/* CSS RESET */
+
 *,
 *::before,
 *::after {
@@ -39,3 +41,5 @@ h5,
 h6 {
   overflow-wrap: break-word;
 }
+
+/* GLOBAL STYLES */
