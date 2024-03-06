@@ -33,6 +33,9 @@ function Footer() {
             <Link to={"/contact-us"} className="footerLink">
               Contact us
             </Link>
+            <Link to={"/products"} className="footerLink">
+              Products
+            </Link>
           </div>
         </div>
       </div>
