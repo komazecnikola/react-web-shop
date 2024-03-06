@@ -8,6 +8,7 @@ import Homepage from "./components/views/Homepage";
 import SingleProduct from "./components/views/SingleProduct";
 import TermsOfService from "./components/views/TermsOfService";
 import PrivacyPolicy from "./components/views/PrivacyPolicy";
+import PageNotFound from "./components/views/PageNotFound";
 
 function App() {
   const [cartItemCount, setCartItemCount] = useState(0);
@@ -24,6 +25,7 @@ function App() {
           <Route path="/terms-of-service" element={<TermsOfService />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/" element={<Homepage />} />
+          <Route path="*" element={<PageNotFound />} />
         </Routes>
         <Footer />
       </Router>

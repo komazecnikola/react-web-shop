@@ -3,18 +3,6 @@
   padding-bottom: 6rem;
 }
 
-.backBtn {
-  border: none;
-  background: none;
-  color: var(--zinc-400);
-  font-size: 1rem;
-  cursor: pointer;
-}
-
-.backBtn:hover {
-  color: var(--zinc-900);
-}
-
 .singleProductItem {
   margin-top: 2rem;
 }

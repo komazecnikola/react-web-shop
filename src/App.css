@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 
-/* CSS RESET & STALEY */
+/* CSS RESET & STYLES */
 
 *,
 *::before,
@@ -118,6 +118,18 @@ p {
   line-height: 1.55;
   font-weight: 400;
   overflow-wrap: break-word;
+}
+
+.backBtn {
+  border: none;
+  background: none;
+  color: var(--zinc-400);
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.backBtn:hover {
+  color: var(--zinc-900);
 }
 
 /* FORM STYLES */
