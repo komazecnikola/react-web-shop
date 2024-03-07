@@ -1,6 +1,6 @@
 .productItem {
-  border: 1px solid var(--zinc-300);
-  box-shadow: var(--box-shadow);
+  border: 1px solid var(--zinc-200);
+
   border-radius: 0.5rem;
   transition: all 300ms ease;
   overflow: hidden;
@@ -11,6 +11,8 @@
 
 .productItem:hover {
   transform: scale(1.01);
+  border-color: var(--green-500);
+  box-shadow: var(--box-shadow);
 }
 
 .productInfo {
@@ -37,8 +39,7 @@
   margin-top: 0.75rem;
   font-size: clamp(1rem, calc(1rem + ((1vw - 0.43rem) * 0.463)), 1.125rem);
   align-self: flex-start;
-  color: var(--zinc-500);
-  color: var(--blue);
+  color: var(--green-700);
 }
 
 .productPrice span {
@@ -51,11 +52,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--zinc-600);
-  color: var(--zinc-50);
+  background-color: var(--green-200);
+  color: var(--zinc-950);
   font-weight: 600;
 }
 
 .productItem:hover .productButton {
-  background-color: var(--zinc-900);
+  background-color: var(--green-500);
 }

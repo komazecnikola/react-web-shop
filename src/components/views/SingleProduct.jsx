@@ -57,7 +57,7 @@ function SingleProduct() {
                   <p>{singleProduct.description}</p>
                 </div>
                 <div className="singleProductButtonWrapper">
-                  <button className="singleProductButton">Add to Cart</button>
+                  <button className="btn">Add to Cart</button>
                 </div>
               </div>
             </div>
