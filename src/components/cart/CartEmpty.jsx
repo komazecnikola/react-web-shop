@@ -1,11 +1,16 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { FaRegFaceSadTear } from "react-icons/fa6";
+import "./cartEmpty.css";
 
 const CartEmpty = ({ totalPrice }) => {
   return (
     <div>
       <div className="cartHeader">
-        <h1>Shopping cart</h1>
+        <div className="cartStateWrapper">
+          <h1>Empty cart</h1>
+          <FaRegFaceSadTear className="cartStateIconRed" />
+        </div>
         <Link className="btn removeBtn" to="/products">
           Shop Now
         </Link>
@@ -13,7 +18,10 @@ const CartEmpty = ({ totalPrice }) => {
 
       <div className="grid grid-two-thirds">
         <div className="itemsListWrapper">
-          <h2>Your Cart is Waiting to be Filled!</h2>
+          <div className="cartMessage">
+            <h2>Looks Like Your Cart is Feeling Light!</h2>
+            <h2>Ready to Start Shopping?</h2>
+          </div>
         </div>
         <div className="totalWrapper">
           <div className="orderWrap">

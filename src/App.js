@@ -10,6 +10,7 @@ import TermsOfService from "./components/views/TermsOfService";
 import PrivacyPolicy from "./components/views/PrivacyPolicy";
 import PageNotFound from "./components/views/PageNotFound";
 import Cart from "./components/views/Cart";
+import ContactUs from "./components/views/ContactUs";
 import { CartProvider } from "./context/CartContext";
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
             <Route path="/cart" element={<Cart />} />
             <Route path="/terms-of-service" element={<TermsOfService />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+            <Route path="/contact-us" element={<ContactUs />} />
             <Route path="/" element={<Homepage />} />
             <Route path="*" element={<PageNotFound />} />
           </Routes>

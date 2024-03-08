@@ -32,6 +32,7 @@ const CartForm = ({ onSubmit }) => {
             value={person.firstName}
             onChange={handleChange}
             className="input"
+            required
           />
         </div>
 
@@ -43,6 +44,7 @@ const CartForm = ({ onSubmit }) => {
             value={person.lastName}
             onChange={handleChange}
             className="input"
+            required
           />
         </div>
 
@@ -54,6 +56,7 @@ const CartForm = ({ onSubmit }) => {
             value={person.country}
             onChange={handleChange}
             className="input"
+            required
           />
         </div>
 
@@ -65,6 +68,7 @@ const CartForm = ({ onSubmit }) => {
             value={person.state}
             onChange={handleChange}
             className="input"
+            required
           />
         </div>
 
@@ -76,6 +80,7 @@ const CartForm = ({ onSubmit }) => {
             value={person.address}
             onChange={handleChange}
             className="input"
+            required
           />
         </div>
 
@@ -87,6 +92,7 @@ const CartForm = ({ onSubmit }) => {
             value={person.city}
             onChange={handleChange}
             className="input"
+            required
           />
         </div>
 
@@ -98,6 +104,7 @@ const CartForm = ({ onSubmit }) => {
             value={person.postalCode}
             onChange={handleChange}
             className="input"
+            required
           />
         </div>
 

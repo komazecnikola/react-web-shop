@@ -1,11 +1,16 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "./cartSuccess.css";
+import { FaRegFaceSmile } from "react-icons/fa6";
 
 const CartSuccess = ({ totalPrice }) => {
   return (
     <div>
       <div className="cartHeader">
-        <h1>Shopping cart</h1>
+        <div className="cartStateWrapper">
+          <h1>Order placed</h1>
+          <FaRegFaceSmile className="cartStateIconGreen" />
+        </div>
         <Link className="btn removeBtn" to="/products">
           Shop More
         </Link>
@@ -13,7 +18,10 @@ const CartSuccess = ({ totalPrice }) => {
 
       <div className="grid grid-two-thirds">
         <div className="itemsListWrapper">
-          <h2>Order Places Successfuly!</h2>
+          <div className="cartMessage">
+            <h2>Your Order Has Been Successfully Placed.</h2>
+            <h2>Thank You for Shopping with Us!</h2>
+          </div>
         </div>
         <div className="totalWrapper">
           <div className="orderWrap">

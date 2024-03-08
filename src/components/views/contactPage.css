@@ -1,0 +1,16 @@
+.contactPage {
+  padding-top: 3rem;
+  padding-bottom: 4rem;
+}
+.contactPageHeader {
+  margin-bottom: 2rem;
+}
+
+.contactPageWrapper {
+  max-width: 700px;
+  padding-bottom: 4rem;
+}
+
+.space {
+  margin-top: 2rem;
+}

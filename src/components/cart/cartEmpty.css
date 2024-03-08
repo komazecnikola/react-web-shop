@@ -1,0 +1,20 @@
+.cartStateWrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.cartStateIconRed {
+  width: 2.5rem;
+  height: 2.5rem;
+  color: var(--red);
+  margin-top: -0.5rem;
+}
+
+@media only screen and (max-width: 43em) {
+  .cartStateIconRed {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-top: -0.75rem;
+  }
+}
