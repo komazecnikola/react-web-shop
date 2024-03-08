@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+@import "@smastrom/react-rating/style.css";
 
 /* CSS RESET & STYLES */
 
@@ -159,7 +160,6 @@ p {
   color: var(--zinc-900);
   line-height: 1;
   box-shadow: var(--shadow-small);
-  cursor: pointer;
 }
 
 .input::placeholder {
@@ -215,6 +215,10 @@ p {
 
 .grid-4-cols {
   grid-template-columns: repeat(4, 1fr);
+}
+
+.grid-two-thirds {
+  grid-template-columns: 2fr 1fr;
 }
 
 @media only screen and (max-width: 43em) {

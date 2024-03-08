@@ -30,3 +30,10 @@
   color: var(--zinc-900);
   position: relative;
 }
+
+.cartIcon {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--green-500);
+}

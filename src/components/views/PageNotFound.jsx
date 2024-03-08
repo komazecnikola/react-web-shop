@@ -9,9 +9,10 @@ function PageNotFound() {
     <div className="container">
       <div className="page404">
         <div className="wrapper404">
-          <h1>Page not found</h1>
+          <span className="headStyleHuge">404</span>
+          <h1>Lost in the Aisles</h1>
           <button onClick={(e) => navigate("/")} className="backBtn">
-            &#8617; Go Back Home
+            &#8617; Go Back to Shopping
           </button>
         </div>
       </div>

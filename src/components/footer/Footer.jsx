@@ -21,6 +21,7 @@ function Footer() {
             >
               Nikola Komazec
             </a>{" "}
+            (Hvala Tamara)
           </p>
 
           <div className="footerLinks">

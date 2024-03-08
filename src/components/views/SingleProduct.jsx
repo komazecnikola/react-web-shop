@@ -1,18 +1,25 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useContext } from "react";
 import api from "../../utils/api";
 import { useNavigate, useParams } from "react-router-dom";
 import "./singleProduct.css";
-import Rating from "@mui/material/Rating";
+
+import { CartContext } from "../../context/CartContext";
+
+import { Rating, ThinStar } from "@smastrom/react-rating";
 
 function SingleProduct() {
   const [singleProduct, setSingleProduct] = useState(null);
-
+  const { addToCart } = useContext(CartContext);
   const navigate = useNavigate();
 
   const { id } = useParams();
 
   const backBtn = () => {
     navigate(-1);
+  };
+
+  const handleAddToCart = () => {
+    addToCart(singleProduct);
   };
 
   useEffect(() => {
@@ -38,26 +45,30 @@ function SingleProduct() {
                   alt={singleProduct.name}
                 />
               </div>
-              {console.log(singleProduct.rating.rate)}
               <div className="singleProductTextWrapper">
                 <div className="singleProductInfo">
                   <h2>{singleProduct.title}</h2>
                   <h1 className="singleProductPrice">${singleProduct.price}</h1>
                   <div className="singleProductRating">
-                    {singleProduct.rating && (
-                      <Rating
-                        name="size-medium"
-                        value={singleProduct.rating.rate}
-                        precision={0.1}
-                        readOnly
-                      />
+                    {singleProduct.rating.rate && (
+                      <div style={{ maxWidth: 150, width: "100%" }}>
+                        <Rating
+                          style={{ maxWidth: 150 }}
+                          readOnly
+                          value={singleProduct.rating.rate}
+                          halfFillMode="svg"
+                          spaceBetween="small"
+                        />
+                      </div>
                     )}
                     <p>Based on {singleProduct.rating.count} reviews</p>
                   </div>
                   <p>{singleProduct.description}</p>
                 </div>
                 <div className="singleProductButtonWrapper">
-                  <button className="btn">Add to Cart</button>
+                  <button onClick={handleAddToCart} className="btn">
+                    Add to Cart
+                  </button>
                 </div>
               </div>
             </div>
