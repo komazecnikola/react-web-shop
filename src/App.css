@@ -226,6 +226,10 @@ p {
     grid-template-columns: 1fr;
     gap: 2rem;
   }
+
+  .grid-two-thirds {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* LEGAL */

@@ -12,3 +12,6 @@
 .checkoutBtn {
   margin-top: 1rem;
 }
+
+@media only screen and (max-width: 43em) {
+}

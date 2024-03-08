@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./cartForm.css";
 
-const CartForm = () => {
+const CartForm = ({ onSubmit }) => {
   const [person, setPerson] = useState({
     firstName: "",
     lastName: "",
@@ -21,14 +21,9 @@ const CartForm = () => {
     }));
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log(person);
-  };
-
   return (
     <div className="cartForm">
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={onSubmit}>
         <div className="inputWrapper col">
           <label>First name:</label>
           <input
@@ -107,7 +102,7 @@ const CartForm = () => {
         </div>
 
         <div className="checkoutBtn">
-          <input className="btn" type="submit" value="Submit" />
+          <input className="btn" type="submit" value="Place order" />
         </div>
       </form>
     </div>

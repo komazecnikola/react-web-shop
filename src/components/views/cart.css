@@ -46,3 +46,32 @@
   justify-content: space-between;
   margin-bottom: 2rem;
 }
+
+@media only screen and (max-width: 43em) {
+  .cartPage {
+    padding-top: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  .itemsListWrapper {
+    padding: 0;
+    border-top: none;
+    border-right: none;
+  }
+
+  .cartHeader {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+  }
+
+  .itemsList {
+    padding-bottom: 3rem;
+  }
+
+  .totalWrapper {
+    border-top: 1px solid var(--zinc-300);
+    padding: 2.5rem 0 0 0;
+  }
+}
